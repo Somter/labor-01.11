@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hearts{
+            text-align: center;
+            border: 2px solid black;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .hearts div{
+            display: inline-block;
+            text-align: center;
+            margin-left: 50px;
+            color: red;
+        }
+
+        .first{
+             font-size: 200px; 
+             animation: boxscale_first 3s alternate infinite;
+        }
+
+        .second{
+             font-size: 200px; 
+             animation: boxscale_second 3s alternate infinite;
+        }
+
+        @keyframes boxscale_first{
+           0%{
+            transform: scale(1);
+           }
+           
+           50%{
+            transform: scale(1.5);
+           }
+
+           100%{
+            transform: scale(1);
+           } 
+        }
+
+        @keyframes boxscale_second{
+            0%{
+                transform: scale(1.5);
+            }
+
+            50%{
+                transform: scale(1);
+            }
+
+            100%{
+                transform: scale(1.5);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="hearts">
+        <p style="font-size: 20px;">hearts</p>
+        <div class="first">&#9825;</div>
+        <div class="second">&#9825;</div>
+        <div class="first">&#9825;</div>
+        <div class="second">&#9825;</div>
+    </div>
+</body>
+</html>
